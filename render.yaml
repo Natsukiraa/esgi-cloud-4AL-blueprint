@@ -1,0 +1,17 @@
+services: 
+  - type: web 
+    runtime: nodejs
+    name: my-service
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mydatabase
+          property: connectionString
+
+databases:
+  - name: pstgres-db
+    user: esgi
+    
