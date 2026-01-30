@@ -1,6 +1,6 @@
 services: 
   - type: web 
-    runtime: nodejs.18
+    runtime: node
     name: my-service
     region: frankfurt
     buildCommand: npm install
