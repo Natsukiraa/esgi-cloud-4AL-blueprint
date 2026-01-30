@@ -14,5 +14,6 @@ services:
 
 databases:
   - name: pstgres-db
+    region: frankfurt
     user: esgi
     plan: free
